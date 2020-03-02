@@ -15,32 +15,58 @@ h1 {
     font-size: 4rem;
     line-height: 4.5rem;
 }
+
 h2 {
     margin: 0px 0px 0.75rem 0px;
     font-size: 1.75rem;
     line-height: 2.25rem;
 }
 
-header {
+a {
+    color: #fefefe;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header, footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
+    height: 4rem;
     font-size: 1.25rem;
-}
-
-header a {
-    color: #fefefe;
-    text-decoration: none;
 }
 
 header nav a {
     margin-left: 1rem;
 }
-header nav a:hover {
-    text-decoration: underline;
-}
 
 main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: calc(100vh - 4rem - 4rem);
     padding: 2rem;
+}
+
+.Animation-Blinking {
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
 }
