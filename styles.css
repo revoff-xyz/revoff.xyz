@@ -1,0 +1,46 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    background: #0e0e0e;
+    color: #fefefe;
+    font-family: 'IBM Plex Mono';
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0px 0px 2rem 0px;
+    font-size: 4rem;
+    line-height: 4.5rem;
+}
+h2 {
+    margin: 0px 0px 0.75rem 0px;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    font-size: 1.25rem;
+}
+
+header a {
+    color: #fefefe;
+    text-decoration: none;
+}
+
+header nav a {
+    margin-left: 1rem;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+}
