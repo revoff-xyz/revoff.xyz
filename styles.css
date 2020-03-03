@@ -60,7 +60,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    min-height: calc(100vh - 4rem - 4rem);
+    min-height: calc(100vh - 12rem);
     padding: 2rem;
 }
 main article {
