@@ -14,17 +14,20 @@ h1 {
     margin: 0px 0px 2rem 0px;
     font-size: 4rem;
     line-height: 4.5rem;
+    text-transform: lowercase;
 }
 
 h2 {
     margin: 0px 0px 0.75rem 0px;
     font-size: 1.75rem;
     line-height: 2.25rem;
+    text-transform: lowercase;
 }
 
 a {
     color: #fefefe;
     text-decoration: none;
+    text-transform: lowercase;
 }
 
 a:hover {
@@ -51,6 +54,24 @@ main {
     align-items: flex-start;
     min-height: calc(100vh - 4rem - 4rem);
     padding: 2rem;
+}
+
+.Actions {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 3.25rem;
+    margin-top: 2rem;
+}
+.Actions p {
+    padding: 0.5rem 2rem;
+    font-size: 2rem;
+}
+.Button {
+    padding: 0.5rem 1rem;
+    background: #fefefe;
+    color: #0e0e0e;
+    font-size: 2rem;
 }
 
 .Animation-Blinking {
