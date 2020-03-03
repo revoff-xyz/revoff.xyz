@@ -1,7 +1,12 @@
 html, body {
+    overflow-x: hidden;
     margin: 0px;
     padding: 0px;
-    background: #0e0e0e;
+    background-image: url('./background.jpg');
+    background-color: #0e0e0e;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     color: #fefefe;
     font-family: 'IBM Plex Mono';
 }
@@ -15,6 +20,7 @@ h1 {
     font-size: 4rem;
     line-height: 4.5rem;
     text-transform: lowercase;
+    word-wrap: normal;
 }
 
 h2 {
@@ -22,6 +28,7 @@ h2 {
     font-size: 1.75rem;
     line-height: 2.25rem;
     text-transform: lowercase;
+    word-wrap: normal;
 }
 
 a {
@@ -55,6 +62,9 @@ main {
     min-height: calc(100vh - 4rem - 4rem);
     padding: 2rem;
 }
+main article {
+    max-width: 100%;
+}
 
 .Actions {
     display: flex;
@@ -72,6 +82,32 @@ main {
     background: #fefefe;
     color: #0e0e0e;
     font-size: 2rem;
+}
+
+@media (max-width: 425px) {
+    html, body {
+        font-size: 12px;
+    }
+
+    header, footer {
+        padding: 1rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .Actions {
+        display: block;
+    }
+    .Actions .Button {
+        height: auto;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .Actions p {
+        display: none;
+    }
 }
 
 .Animation-Blinking {
