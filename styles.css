@@ -85,7 +85,7 @@ main article {
     font-size: 2rem;
 }
 
-@media (max-width: 425px) {
+/* @media (max-width: 425px) {
     header, footer {
         padding: 1rem;
     }
@@ -105,7 +105,7 @@ main article {
     .Actions p {
         display: none;
     }
-}
+} */
 
 .Animation-Blinking {
     animation: blink 1s step-end infinite;
