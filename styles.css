@@ -9,6 +9,7 @@ html, body {
     background-repeat: no-repeat;
     color: #fefefe;
     font-family: 'IBM Plex Mono';
+    font-size: 12px;
 }
 
 * {
@@ -85,10 +86,6 @@ main article {
 }
 
 @media (max-width: 425px) {
-    html, body {
-        font-size: 12px;
-    }
-
     header, footer {
         padding: 1rem;
     }
